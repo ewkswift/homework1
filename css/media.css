@@ -1,0 +1,84 @@
+
+
+@media(max-width:1200px){
+
+ .container {
+    width: 100%;
+    padding: 0 20px;
+ }
+
+}
+
+@media(max-width:992px){
+    .excurs_box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .excurs_item{
+        width: 100%;
+    }
+    .promo h1 {
+        font-size: 70px;
+    }
+}
+
+@media(max-width:768px){
+
+    .burger-menu{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+    }
+    .burger-menu span {
+        width: 40px;
+        height: 5px;
+        border-radius: 10px;
+        background: #FFFFFF;
+        
+    }
+
+    .menu {
+        display: none;
+    }
+    .promo h1 {
+        font-size: 38px;
+    }
+    .excurs_box {
+     
+        grid-template-columns: 1fr;
+    }
+    
+    .excurs_header a {
+        display: none;
+    }
+    .about .container {
+        max-width: 90% ;
+        padding: 35px;
+    }
+    .tour_grid {
+       
+        grid-template-columns:  1fr;
+}
+.tour_footer {
+    max-width: 100%;
+}
+
+.gallery_grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 180px 180px 380px;
+}
+.gallery_item:nth-child(1n){
+grid-column: auto;
+grid-row: auto;
+
+}
+.gallery_item:nth-child(1){
+    grid-row: 1/3;
+}
+.gallery_item:nth-child(4){
+    grid-column: 1/3;
+}
+
+}
